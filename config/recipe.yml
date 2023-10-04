@@ -26,6 +26,10 @@ modules:
     install:
       # - micro
       # - starship
+      - langpacks-en       # English langpacks
+      - langpacks-en_GB    # prefered language
+      - python3-psutil     # needed for dconf
+      - alacritty          # terminal emulator
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -39,6 +43,7 @@ modules:
       # - ublue-update # https://github.com/ublue-os/ublue-update
       - dconf-update-service # a service unit that updates the dconf db on boot
       # - devpod # https://devpod.sh/ as an rpm
+      - laptop # installs TLP and configures your system for laptop usage
 
 
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
@@ -46,6 +51,21 @@ modules:
     custom-flatpaks: # this section is optional
       # - Celluloid: io.github.celluloid_player.Celluloid
       # - Krita: org.kde.krita
+      - org.mozilla.firefox                  # internet browser
+      - com.mattjakeman.ExtensionManager     # gnome extension manager
+      - org.libreoffice.LibreOffice          # office
+      - com.github.tchx84.Flatseal           # flatpak  tool
+      - com.bitwarden.desktop                # password tool
+      - com.github.johnfactotum.Foliate      # ebook reader
+      - io.mpv.Mpv                           # movie player
+      - org.filezillaproject.Filezilla       # ftp; scp; sftp client
+      - nz.mega.MEGAsync                     # mega client
+      - io.gitlab.librewolf-community        # privacy browser
+      - org.gnome.Cheese                     # cam tool
+      - com.github.marktext.marktext         # markdown tool
+      - org.gnome.FileRoller                 # (un)archive app
+      - social.whalebird.WhalebirdDesktop    # mastodon client
+      - im.riot.Riot                         # element app; matrix messaging
 
   - type: script
     scripts:
