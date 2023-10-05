@@ -1,6 +1,6 @@
 type: fonts
 fonts:
   nerd-fonts:
-    - FiraCode
-    - Hack
-    - Meslo
+    #- FiraCode
+    #- Hack
+    #- Meslo
