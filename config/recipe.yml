@@ -30,6 +30,8 @@ modules:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
+  - from-file: custom-packages.yml
+
   - type: bling # configure what to pull in from ublue-os/bling
     install:
       - justfiles # add "!include /usr/share/ublue-os/just/bling.just"
@@ -53,6 +55,6 @@ modules:
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh
 
-  - from-file: custom-packages.yml
+  #- from-file: custom-packages.yml
   #- from-file: custom-flatpaks.yml
   #- from-file: custom-fonts.yml
