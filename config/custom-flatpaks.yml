@@ -1,5 +1,8 @@
 type: yafti
 custom-flatpaks:
+  #- 
+#type: yafti
+#custom-flatpaks:
   #- Bitwarden: com.bitwarden.desktop                # password tool
   #- Foliate: com.github.johnfactotum.Foliate        # ebook reader
   #- Mpv: io.mpv.Mpv                                 # movie player
