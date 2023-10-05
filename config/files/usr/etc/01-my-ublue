@@ -1,0 +1,69 @@
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+
+show-battery-percentage=true
+clock-show-weekday=true
+
+[org/gnome/desktop/calendar]
+show-weekdate=true
+
+[org/gnome/desktop/background]
+show-desktop-icons=false
+picture-uri='file:///usr/share/backgrounds/ublue-os/2D/wallpaper-dark.png'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+
+[org/gnome/desktop/privacy]
+remember-recent-files=true
+
+[org/gnome/desktop/privacy]
+remove-old-trash-files=true
+
+[org/gnome/desktop/privacy]
+remove-old-temp-files=true
+
+[org/gnome/desktop/privacy]
+old-files-ager='uint32 14'
+
+[org/gnome/desktop/session]
+idle-delay='uint32 480'
+
+[org/gnome/desktop/screensaver]
+lock-delay='uint32 1800'
+
+[org/gnome/desktop/interface]
+clock-format='24h'
+
+[org/gnome/desktop/interface]
+clock-show-date=true
+
+[org/gtk/settings/file-chooser]
+clock-format='24h'
+
+[org/gnome/desktop/wm/preferences]
+button-layoutr='appmenu:minimize,maximize,close'
+
+[org/gnome/desktop/media-handling]
+autorun-never=true
+
+[org/gnome/desktop/interface]
+show-battery-percentage=true
+
+#[org/gnome/desktop/interface]
+#gtk-theme='Adwaita-dark'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+
+#[org/gnome/shell]
+#favorite-apps="[
+#      'firefox.desktop',
+#      'io.gitlab.librewolf-community.desktop',
+#      'org.gnome.Terminal.desktop',
+#      'org.gnome.Nautilus.desktop',
+#      'com.visualstudio.code.desktop',
+#      'com.bitwarden.desktop.desktop',
+#      'virt-manager.desktop',
+#      'org.gnome.Calendar.desktop']"
+
