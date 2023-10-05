@@ -4,3 +4,6 @@ fonts:
     #- FiraCode
     #- Hack
     #- Meslo
+  google-fonts:
+    #- Roboto
+    #- Open Sans
