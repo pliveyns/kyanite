@@ -52,7 +52,7 @@ modules:
 
   - from-file: custom-flatpaks.yml
 
-  #- from-file: custom-fonts.yml
+  - from-file: custom-fonts.yml
 
   - type: script
     scripts:
