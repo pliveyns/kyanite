@@ -2,8 +2,8 @@ type: fonts
 fonts:
   nerd-fonts:
     - FiraCode
-    #- Hack
-    #- Meslo
+    - Hack
+    - Meslo
   google-fonts:
     - Roboto
-    #- Open Sans
+    - Open Sans
