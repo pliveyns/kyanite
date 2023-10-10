@@ -27,7 +27,10 @@ remove-old-temp-files=true
 old-files-ager='uint32 14'
 
 [org/gnome/desktop/session]
-idle-delay='uint32 480'
+idle-delay='uint32 900'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout='3600'
 
 [org/gnome/desktop/screensaver]
 lock-delay='uint32 1800'
