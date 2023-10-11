@@ -8,22 +8,16 @@ show-weekdate=true
 
 [org/gnome/desktop/background]
 show-desktop-icons=false
-picture-uri='file:///usr/share/backgrounds/ublue-os/2D/wallpaper-dark.png'
-
-[org/gnome/settings-daemon/plugins/color]
-night-light-enabled=true
+#picture-uri='file:///usr/share/backgrounds/ublue-os/2D/wallpaper-dark.png'
 
 [org/gnome/desktop/privacy]
 remember-recent-files=true
 remove-old-trash-files=true
 remove-old-temp-files=true
-old-files-ager=uint32 16
+old-files-age=uint32 16
 
 [org/gnome/desktop/session]
 idle-delay=uint32 900
-
-[org/gnome/settings-daemon/plugins/power]
-sleep-inactive-ac-timeout=3600
 
 [org/gnome/desktop/screensaver]
 lock-delay=uint32 1800
@@ -31,6 +25,8 @@ lock-delay=uint32 1800
 [org/gnome/desktop/interface]
 clock-format=24h
 clock-show-date=true
+show-battery-percentage=true
+#gtk-theme='Adwaita-dark'
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
@@ -38,9 +34,11 @@ button-layout='appmenu:minimize,maximize,close'
 [org/gnome/desktop/media-handling]
 autorun-never=true
 
-[org/gnome/desktop/interface]
-show-battery-percentage=true
-#gtk-theme='Adwaita-dark'
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=1800
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
