@@ -1,0 +1,5 @@
+[org/gnome/desktop/privacy]
+remember-recent-files=true
+remove-old-trash-files=true
+remove-old-temp-fil:wqes=true
+old-files-age=uint32 16
