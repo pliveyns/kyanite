@@ -1,6 +1,5 @@
 [org/gnome/desktop/interface]
 color-scheme='prefer-dark'
-
 show-battery-percentage=true
 clock-show-weekday=true
 
@@ -16,14 +15,8 @@ night-light-enabled=true
 
 [org/gnome/desktop/privacy]
 remember-recent-files=true
-
-[org/gnome/desktop/privacy]
 remove-old-trash-files=true
-
-[org/gnome/desktop/privacy]
 remove-old-temp-files=true
-
-[org/gnome/desktop/privacy]
 old-files-ager='uint32 14'
 
 [org/gnome/desktop/session]
@@ -37,8 +30,6 @@ lock-delay='uint32 1800'
 
 [org/gnome/desktop/interface]
 clock-format='24h'
-
-[org/gnome/desktop/interface]
 clock-show-date=true
 
 [org/gtk/settings/file-chooser]
@@ -52,8 +43,6 @@ autorun-never=true
 
 [org/gnome/desktop/interface]
 show-battery-percentage=true
-
-#[org/gnome/desktop/interface]
 #gtk-theme='Adwaita-dark'
 
 [org/gnome/nautilus/preferences]
