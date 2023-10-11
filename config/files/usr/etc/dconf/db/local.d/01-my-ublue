@@ -17,26 +17,23 @@ night-light-enabled=true
 remember-recent-files=true
 remove-old-trash-files=true
 remove-old-temp-files=true
-old-files-ager='uint32 14'
+old-files-ager=uint32 16
 
 [org/gnome/desktop/session]
 idle-delay=uint32 900
 
 [org/gnome/settings-daemon/plugins/power]
-sleep-inactive-ac-timeout='3600'
+sleep-inactive-ac-timeout=3600
 
 [org/gnome/desktop/screensaver]
-lock-delay='uint32 1800'
+lock-delay=uint32 1800
 
 [org/gnome/desktop/interface]
-clock-format='24h'
+clock-format=24h
 clock-show-date=true
 
-[org/gtk/settings/file-chooser]
-clock-format='24h'
-
 [org/gnome/desktop/wm/preferences]
-button-layoutr='appmenu:minimize,maximize,close'
+button-layout='appmenu:minimize,maximize,close'
 
 [org/gnome/desktop/media-handling]
 autorun-never=true
