@@ -1,0 +1,6 @@
+[system/locale]
+region='nl_BE.UTF-8'
+
+[system/proxy]
+mode='none'
+

@@ -1,0 +1,7 @@
+[org/gnome/shell/extensions/openweather]
+actual-city=0
+city='50.69302,4.204696>Tubize, Nivelles, Brabant wallon, Wallonie, 1480, België / Belgique / Belgien>0'
+days-forecast=5
+show-comment-in-panel=true
+wind-direction=true
+
