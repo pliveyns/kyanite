@@ -5,7 +5,7 @@ favorite-apps="[
       'io.gitlab.librewolf-community.desktop',
       'org.gnome.Nautilus.desktop',
       'com.bitwarden.desktop.desktop',
-      'org.gnome.Calendar.desktop',
+      'org.gnome.Calendar.desktop'
       ]"
 
 #      'org.gnome.Terminal.desktop',
