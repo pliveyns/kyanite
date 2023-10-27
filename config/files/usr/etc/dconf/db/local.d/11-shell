@@ -1,11 +1,11 @@
 [org/gnome/shell]
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'openweather-extension@jenslody.de']
-favorite-apps = [ \
-      'firefox.desktop', \
-      'io.gitlab.librewolf-community.desktop', \
-      'org.gnome.Nautilus.desktop', \
-      'com.bitwarden.desktop.desktop', \
-      'org.gnome.Calendar.desktop' \
+favorite-apps = [
+      'org.mozilla.firefox.desktop',
+      'io.gitlab.librewolf-community.desktop',
+      'org.gnome.Nautilus.desktop',
+      'com.bitwarden.desktop.desktop',
+      'org.gnome.Calendar.desktop'
       ]
 
 #      'org.gnome.Terminal.desktop',
