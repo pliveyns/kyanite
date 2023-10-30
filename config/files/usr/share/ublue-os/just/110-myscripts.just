@@ -20,4 +20,8 @@ dotfiles:
 
 # Post installation activities
 postinstall:
+  just gnome-extensions
+  just toolbox-bluebox
+  just nvchad
+  just dotfiles
 
