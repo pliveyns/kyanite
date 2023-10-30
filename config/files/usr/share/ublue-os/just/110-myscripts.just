@@ -8,11 +8,12 @@ gnome-extensions:
 
 # Install bluebox toolbox: ghcr.io/pliveyns/bluebox
 toolbox-bluebox:
+  # should not run if the toolbox already exists
   toolbox create -i ghcr.io/pliveyns/bluebox -c bluebox
 
 # Install nvchad
 nvchad:
-  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+  toolbox run --container bluebox git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
