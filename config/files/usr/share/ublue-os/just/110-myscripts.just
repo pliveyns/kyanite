@@ -13,7 +13,7 @@ toolbox-bluebox:
 
 # Install nvchad
 nvchad:
-  toolbox run --container bluebox git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+  toolbox run --container bluebox git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
