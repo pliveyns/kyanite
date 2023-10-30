@@ -2,14 +2,14 @@
 
 # Install recommended GNOME extensions
 gnome-extensions:
-  pip install --upgrade gnome-extensions-cli
+	pip install --upgrade gnome-extensions-cli
   gext install appindicatorsupport@rgcjonas.gmail.com
   gext install openweather-extension@jenslody.de
 
 # Install bluebox toolbox: ghcr.io/pliveyns/bluebox
 toolbox-bluebox:
   # should not run if the toolbox already exists
-  toolbox create -i ghcr.io/pliveyns/bluebox -c bluebox
+  toolbox create -y -i ghcr.io/pliveyns/bluebox -c bluebox
 
 # Install nvchad
 nvchad:
