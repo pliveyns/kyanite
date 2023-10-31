@@ -1,3 +1,5 @@
+# vim: set ft=make :
+
 # Install recommended GNOME extensions
 gnome-extensions:
   echo "Installing prefered Gnome Extensions"
