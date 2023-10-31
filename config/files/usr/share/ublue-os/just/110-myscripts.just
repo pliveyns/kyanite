@@ -9,7 +9,7 @@ gnome-extensions:
 toolbox-bluebox:
   #!/bin/sh
   # should not run if the toolbox already exists
-  toolbox list --container | grep bluebox >& /dev/null
+  toolbox list --containers | grep bluebox >& /dev/null
   if [ $? -eq 0 ]; then
     echo "The toolbx bluebox already exists and will not be installed"
   else
