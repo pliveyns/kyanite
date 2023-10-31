@@ -23,7 +23,7 @@ toolbox-bluebox:
 nvchad:
   #!/bin/sh
   # First check if nvim folder is not already existing
-  if [ -d "~/.config/nvim/" ]; then
+  if [ -d ~/.config/nvim/ ]; then
     echo "Directory ~/.config/nvim/ already exists."
     echo "NvChad will not be installed"
   else
