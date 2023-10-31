@@ -1,4 +1,3 @@
-
 # Install recommended GNOME extensions
 gnome-extensions:
   echo "Installing prefered Gnome Extensions"
@@ -8,6 +7,7 @@ gnome-extensions:
 
 # Install bluebox toolbox: ghcr.io/pliveyns/bluebox
 toolbox-bluebox:
+  #!/bin/sh
   # should not run if the toolbox already exists
   toolbox list --container | grep bluebox >& /dev/null
   if [ $? -eq 0 ]; then
@@ -19,6 +19,7 @@ toolbox-bluebox:
 
 # Install nvchad
 nvchad:
+  #!/bin/sh
   # First check if nvim folder is not already existing
   if [ -d "~/.config/nvim/" ]; then
     echo "Directory ~/.config/nvim/ already exists."
