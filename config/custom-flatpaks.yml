@@ -10,4 +10,5 @@ custom-flatpaks:
   - FileRoller: org.gnome.FileRoller                # (un)archive app
   - Whalebird: social.whalebird.WhalebirdDesktop    # mastodon client
   - Element: im.riot.Riot                           # element app; mat
-  - cryptomator: org.cryptomator.Cryptomator        # Encryption tool
+  - Cryptomator: org.cryptomator.Cryptomator        # Encryption tool
+  - Syncthingy: com.github.zocker_160.SyncThingy    # Syncthingy = Syncthing + tray indicator
