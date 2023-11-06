@@ -4,3 +4,4 @@ install:
   - langpacks-en_GB  # prefered language
   - python3-psutil   # needed for dconf
   - alacritty        # terminal emulator
+  - gparted          # partitioning tool
