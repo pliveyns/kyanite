@@ -40,7 +40,7 @@ jobs:
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe.yml
-          - recipe-39.yml
+          - recipe-38.yml
 # !!!
 
     steps:
