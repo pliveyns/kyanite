@@ -36,6 +36,7 @@ nvchad:
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
   #!/bin/sh
+  # Check if dotfiles was already installed
   if [ -f ~/.config/.dotfiles ]
   then
     echo "file ~/.config/.dotfiles already exists."
