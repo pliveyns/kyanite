@@ -23,9 +23,10 @@ toolbox-bluebox:
 nvchad:
   #!/bin/sh
   # First check if nvim folder is not already existing
-  if [ -d ~/.config/nvim/ ]; then
+  if [ -d ~/.config/nvim/ ]
+	then
     echo "Directory ~/.config/nvim/ already exists."
-    echo "NvChad will not be installed"
+    echo "NvChad will not be installed."
   else
     echo "Installing NvChad for nvim"
     toolbox run --container bluebox git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
@@ -33,8 +34,15 @@ nvchad:
 
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
-  echo "Pulling dotfiles from gitlab"
-  toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
+	#!/bin/sh
+	if [ -f ~/.config/.dotfiles ]
+	then
+	  echo "file ~/.config/.dotfiles already exists."
+		echo "dotfiles will not be installed."
+  else
+    echo "Pulling dotfiles from gitlab"
+    toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
+	fi
 
 # Post installation activities
 postinstall:
