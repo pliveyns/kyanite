@@ -12,7 +12,8 @@ toolbox-bluebox:
   #!/bin/sh
   # should not run if the toolbox already exists
   toolbox list --containers | grep bluebox >& /dev/null
-  if [ $? -eq 0 ]; then
+  if [ $? -eq 0 ]
+  then
     echo "The toolbx bluebox already exists and will not be installed"
   else
     echo "Installing bluebox toolbx"
@@ -34,15 +35,15 @@ nvchad:
 
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
-	#!/bin/sh
-	if [ -f ~/.config/.dotfiles ]
-	then
-	  echo "file ~/.config/.dotfiles already exists."
-		echo "dotfiles will not be installed."
+  #!/bin/sh
+  if [ -f ~/.config/.dotfiles ]
+  then
+    echo "file ~/.config/.dotfiles already exists."
+    echo "dotfiles will not be installed."
   else
     echo "Pulling dotfiles from gitlab"
     toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
-	fi
+  fi
 
 # Post installation activities
 postinstall:
