@@ -46,6 +46,12 @@ dotfiles:
     toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
   fi
 
+# Setup virtualisation for the user
+virtualisation:
+	#!/bin/sh
+	# Add the user to libvirt group
+	sudo usermod -a -G libvirt $user
+
 # Post installation activities
 postinstall:
   echo "Starting Post Install just scripts"
@@ -53,5 +59,6 @@ postinstall:
   just --unstable toolbox-bluebox
   just --unstable nvchad
   just --unstable dotfiles
+	just --unstable virtualisation
   echo "Finished Post Install"
 
