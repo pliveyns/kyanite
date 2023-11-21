@@ -59,6 +59,6 @@ postinstall:
   just --unstable toolbox-bluebox
   just --unstable nvchad
   just --unstable dotfiles
-	just --unstable virtualisation
+  just --unstable virtualisation
   echo "Finished Post Install"
 
