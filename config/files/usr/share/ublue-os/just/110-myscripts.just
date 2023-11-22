@@ -50,7 +50,7 @@ dotfiles:
 virtualisation:
 	#!/bin/sh
 	# Add the user to libvirt group
-	sudo usermod -a -G libvirt $user
+	sudo usermod -a -G libvirt $USER
 
 # Post installation activities
 postinstall:
