@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: kyanite
 # description will be included in the image's metadata
-description: Kyanite; my customised Fedora Silverblue. Make your own! https://ublue.it/making-your-own/
+description: Kyanite; my customised Fedora Silverblue. Check out https://ublue.it/making-your-own/ to make your own
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
