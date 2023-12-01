@@ -65,5 +65,6 @@ postinstall:
   just --unstable nvchad
   just --unstable dotfiles
   just --unstable virtualisation
+  just --unstable default-browser-firefox
   echo "Finished Post Install"
 
