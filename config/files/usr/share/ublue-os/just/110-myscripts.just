@@ -52,9 +52,9 @@ virtualisation:
   # Add the user to libvirt group
   sudo usermod -a -G libvirt $USER
 
+# Set firefox as default default browser
 default-browser-firefox:
   #!/bin/sh
-  # Set firefox as default default browser
   xdg-settings set default-web-browser org.mozilla.firefox.desktop
 
 # Post installation activities
