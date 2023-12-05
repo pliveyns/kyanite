@@ -3,10 +3,7 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: kyanite
-<<<<<<< HEAD
   - label: pliveyns/kyanite-kvm
     ks: /kickstart/ublue-os.ks
     flavors:
-=======
->>>>>>> 753ff9ec45f3814bc61b63e5f6d5d1eab0bf1a96
       - label: kyanite-kvm
