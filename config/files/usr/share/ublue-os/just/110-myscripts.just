@@ -12,7 +12,8 @@ toolbox-bluebox:
   #!/bin/sh
   # should not run if the toolbox already exists
   toolbox list --containers | grep bluebox >& /dev/null
-  if [ $? -eq 0 ]; then
+  if [ $? -eq 0 ]
+  then
     echo "The toolbx bluebox already exists and will not be installed"
   else
     echo "Installing bluebox toolbx"
@@ -23,9 +24,10 @@ toolbox-bluebox:
 nvchad:
   #!/bin/sh
   # First check if nvim folder is not already existing
-  if [ -d ~/.config/nvim/ ]; then
+  if [ -d ~/.config/nvim/ ]
+  then
     echo "Directory ~/.config/nvim/ already exists."
-    echo "NvChad will not be installed"
+    echo "NvChad will not be installed."
   else
     echo "Installing NvChad for nvim"
     toolbox run --container bluebox git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
@@ -33,8 +35,27 @@ nvchad:
 
 # Install dotfiles with chezmoi from gitlab
 dotfiles:
-  echo "Pulling dotfiles from gitlab"
-  toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
+  #!/bin/sh
+  # Check if dotfiles was already installed
+  if [ -f ~/.config/.dotfiles ]
+  then
+    echo "file ~/.config/.dotfiles already exists."
+    echo "dotfiles will not be installed."
+  else
+    echo "Pulling dotfiles from gitlab"
+    toolbox run --container bluebox chezmoi init --apply git@gitlab.com:pliveyns/dotfiles.git
+  fi
+
+# Setup virtualisation for the user
+virtualisation:
+  #!/bin/sh
+	# Add the user to libvirt group
+	sudo usermod -a -G libvirt $USER
+
+default-browser-firefox:
+# Set firefox as default default browser
+  #!/bin/sh
+  xdg-settings set default-web-browser org.mozilla.firefox.desktop
 
 # Post installation activities
 postinstall:
@@ -43,5 +64,7 @@ postinstall:
   just --unstable toolbox-bluebox
   just --unstable nvchad
   just --unstable dotfiles
+  just --unstable virtualisation
+  just --unstable default-browser-firefox
   echo "Finished Post Install"
 

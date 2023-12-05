@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
-name: kyanite
+name: kyanite-kvm
 # description will be included in the image's metadata
-description: Kyanite; my customised Fedora Silverblue. Check out https://ublue.it/making-your-own/ to make your own
+description: Kyanite; my customised Fedora Silverblue. Make your own! https://ublue.it/making-your-own/
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -31,6 +31,7 @@ modules:
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
   - from-file: custom-packages.yml
+  - from-file: custom-packages-kvm.yml
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
