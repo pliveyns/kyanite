@@ -49,8 +49,8 @@ dotfiles:
 # Setup virtualisation for the user
 virtualisation:
   #!/bin/sh
-	# Add the user to libvirt group
-	sudo usermod -a -G libvirt $USER
+  # Add the user to libvirt group
+  sudo usermod -a -G libvirt $USER
 
 default-browser-firefox:
 # Set firefox as default default browser
