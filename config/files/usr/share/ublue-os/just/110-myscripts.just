@@ -50,8 +50,8 @@ dotfiles:
 virtualisation:
   #!/bin/sh
   # Add the user to libvirt & qemu group
-  sudo usermod -a -G libvirt $USER
-  sudo usermod -a -G qemu $USER
+  sudo usermod -a -G libvirt ${USER}
+  sudo usermod -a -G qemu ${USER}
 
 # Set firefox as default default browser
 default-browser-firefox:
