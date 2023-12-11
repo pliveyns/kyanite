@@ -41,7 +41,6 @@ jobs:
         recipe:
           - recipe.yml
           - recipe-kvm.yml
-          - recipe-38.yml
 # !!!
 
     steps:
