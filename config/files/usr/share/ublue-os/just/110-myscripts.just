@@ -62,8 +62,8 @@ default-browser-firefox:
 balena-etcher:
   #!/bin/sh
   echo "Install Balena Etcher AppImage"
-  curl -L https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage -o ${USER}/.local/bin/balena-etcher.AppImage
-  chmod +x ${USER}/.local/bin/balena-etcher.AppImage
+  curl -L https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage -o /home/${USER}/.local/bin/balena-etcher.AppImage
+  chmod +x /home/${USER}/.local/bin/balena-etcher.AppImage
 
 # Post installation activities
 postinstall:
