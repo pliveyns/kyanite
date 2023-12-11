@@ -58,6 +58,13 @@ default-browser-firefox:
   #!/bin/sh
   xdg-settings set default-web-browser org.mozilla.firefox.desktop
 
+# Install Balena Etcher AppImage
+balena-etcher:
+  #!/bin/sh
+  echo "Install Balena Etcher AppImage"
+  curl -L https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage -o ${USER}/.local/bin/balena-etcher.AppImage
+  chmod +x ${USER}/.local/bin/balena-etcher.AppImage
+
 # Post installation activities
 postinstall:
   echo "Starting Post Install just scripts"
@@ -67,5 +74,6 @@ postinstall:
   just --unstable dotfiles
   just --unstable virtualisation
   just --unstable default-browser-firefox
+  just --unstable balena-etcher
   echo "Finished Post Install"
 
