@@ -5,3 +5,4 @@ install:
   - python3-psutil   # needed for dconf
   - alacritty        # terminal emulator
   - gparted          # partitioning tool
+  - gnome-shell-extension-openweather   # OpenWeather Gnome Extension
