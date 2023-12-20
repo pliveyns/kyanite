@@ -6,3 +6,4 @@ install:
   - alacritty        # terminal emulator
   - gparted          # partitioning tool
   - gnome-shell-extension-openweather   # OpenWeather Gnome Extension
+  - gnome-shell-extension-appindicator  # AppIndicator and KStatusNotifierItem

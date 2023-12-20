@@ -4,8 +4,9 @@
 gnome-extensions:
   echo "Installing prefered Gnome Extensions"
   pip install --upgrade gnome-extensions-cli
-  gext install appindicatorsupport@rgcjonas.gmail.com
-  gext install openweather-extension@jenslody.de
+  #gext install appindicatorsupport@rgcjonas.gmail.com
+  #gext install openweather-extension@jenslody.de
+  # Both can be installed from fedora packages
 
 # Install bluebox toolbox: ghcr.io/pliveyns/bluebox
 toolbox-bluebox:
